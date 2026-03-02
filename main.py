@@ -8,13 +8,13 @@ def obter_numeros():
         numeros = [float(num) for num in entrada.split()]
         return numeros
     except ValueError:
-        print("⚠️ Você digitou algo inválido.")
+        print("Você digitou algo inválido.")
         return None
 
 
 def main():
     print("=" * 40)
-    print("📊 ANALISADOR DE NÚMEROS")
+    print("ANALISADOR DE NÚMEROS")
     print("=" * 40)
 
     while True:
@@ -24,7 +24,7 @@ def main():
             maior, menor = maior_e_menor(numeros)
             media = calcular_media(numeros)
 
-            print("\n📈 Resultado:")
+            print("\nResultado:")
             print(f"Maior número: {maior}")
             print(f"Menor número: {menor}")
             print(f"Média: {media:.2f}")
@@ -37,4 +37,5 @@ def main():
 
 
 if __name__ == "__main__":
+
     main()
